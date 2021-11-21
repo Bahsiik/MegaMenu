@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    --bleu-marine: #23364B;
+    --gris: #9AAAB7;
+    --bleu-metal: #547787;
+    --bleu: #2987C5;
+    --orange: #F36428;
+    --bleu-metal-sombre: #365670;
+    --gris-clair: #CCC;
+    --blanc: #FFF;
+}
+
+body {
+    font-family: 'Roboto', serif;
+    font-weight: 300;
+    color: var(--gris-clair);
+}
+
+.affichage {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: var(--bleu-marine);
+    height: 75px;
+    padding: 0;
+}
+
+.element{
+    box-sizing: border-box;
+    border: 1px dotted var(--gris);
+    height: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.element:hover {
+    background: var(--orange);
+}
+
+#sousMenu > ul, #sousMenuDroit > ul, #sousMenuGauche > ul, #megaMenu > ul, #blog > ul, #images > ul {
+    display: none;
+}
+
+#sousMenu:hover > ul {
+    background: var(--bleu-metal-sombre);
+    display: block;
+    position: absolute;
+    top: 125px;
+    left: 222px;
+    padding-inline-start: 0;
+}
+
+#sousMenuDroit:hover > ul {
+    background: var(--bleu-metal);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    padding-inline-start: 0;
+}
+
+#sousMenuGauche:hover > ul {
+    background: var(--bleu-metal);
+    display: block;
+    position: absolute;
+    top: 70px;
+    right: 100%;
+    padding-inline-start: 0;
+}
+
+#megaMenu:hover > ul {
+    background: var(--bleu-metal-sombre);
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    top: 125px;
+    right: 113px;
+    padding-inline-start: 0;
+}
+
+
+.teteListe {
+    background: var(--bleu-metal-sombre);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 75px;
+    padding: 0;
+}
+
+.liste {
+    background: var(--bleu-metal);
+    list-style-type: none;
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 25px;
+}
+
+#blog:hover ul {
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 100px;
+    background: var(--bleu-metal);
+    display: flex;
+    position: absolute;
+    top: 125px;
+    right: 113px;
+}
+
+#images:hover ul {
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 100px;
+    background: var(--bleu-metal);
+    display: flex;
+    position: absolute;
+    justify-content: space-evenly;
+    top: 125px;
+    right: 113px;
+}
+
+.bouton {
+    border-radius: 1px;
+    margin-top:15px;
+    background-color: var(--bleu);
+    padding: 2px 10px;
+    line-height: 21px;
+    display: inline-block;
+}
+
+.bouton:hover {
+    background: var(--orange);
+}
+
